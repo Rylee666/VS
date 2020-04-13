@@ -18,7 +18,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="实验1.1.h">
+    <ClInclude Include="实验1.2.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -30,10 +30,10 @@
     <ClInclude Include="MainFrm.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="实验1.1Doc.h">
+    <ClInclude Include="实验1.2Doc.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="实验1.1View.h">
+    <ClInclude Include="实验1.2View.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
@@ -41,7 +41,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="实验1.1.cpp">
+    <ClCompile Include="实验1.2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -50,28 +50,28 @@
     <ClCompile Include="MainFrm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="实验1.1Doc.cpp">
+    <ClCompile Include="实验1.2Doc.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="实验1.1View.cpp">
+    <ClCompile Include="实验1.2View.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="实验1.1.rc">
+    <ResourceCompile Include="实验1.2.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\My11.rc2">
+    <None Include="res\My12.rc2">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\实验1.1Doc.ico">
+    <Image Include="res\实验1.2Doc.ico">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="res\实验1.1.ico">
+    <Image Include="res\实验1.2.ico">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Toolbar.bmp">

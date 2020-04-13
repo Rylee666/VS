@@ -1,5 +1,5 @@
 
-// 实验1.1.h : 实验1.1 应用程序的主头文件
+// 实验1.2.h : 实验1.2 应用程序的主头文件
 //
 #pragma once
 
@@ -10,14 +10,14 @@
 #include "resource.h"       // 主符号
 
 
-// C实验11App:
-// 有关此类的实现，请参阅 实验1.1.cpp
+// C实验12App:
+// 有关此类的实现，请参阅 实验1.2.cpp
 //
 
-class C实验11App : public CWinApp
+class C实验12App : public CWinApp
 {
 public:
-	C实验11App();
+	C实验12App();
 
 
 // 重写
@@ -30,4 +30,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern C实验11App theApp;
+extern C实验12App theApp;

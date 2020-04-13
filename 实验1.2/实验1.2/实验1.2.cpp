@@ -1,34 +1,34 @@
 
-// 实验1.1.cpp : 定义应用程序的类行为。
+// 实验1.2.cpp : 定义应用程序的类行为。
 //
 
 #include "stdafx.h"
 #include "afxwinappex.h"
 #include "afxdialogex.h"
-#include "实验1.1.h"
+#include "实验1.2.h"
 #include "MainFrm.h"
 
-#include "实验1.1Doc.h"
-#include "实验1.1View.h"
+#include "实验1.2Doc.h"
+#include "实验1.2View.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// C实验11App
+// C实验12App
 
-BEGIN_MESSAGE_MAP(C实验11App, CWinApp)
-	ON_COMMAND(ID_APP_ABOUT, &C实验11App::OnAppAbout)
+BEGIN_MESSAGE_MAP(C实验12App, CWinApp)
+	ON_COMMAND(ID_APP_ABOUT, &C实验12App::OnAppAbout)
 	// 基于文件的标准文档命令
 	ON_COMMAND(ID_FILE_NEW, &CWinApp::OnFileNew)
 	ON_COMMAND(ID_FILE_OPEN, &CWinApp::OnFileOpen)
 END_MESSAGE_MAP()
 
 
-// C实验11App 构造
+// C实验12App 构造
 
-C实验11App::C实验11App()
+C实验12App::C实验12App()
 {
 	// 支持重新启动管理器
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS;
@@ -41,20 +41,20 @@ C实验11App::C实验11App()
 
 	// TODO: 将以下应用程序 ID 字符串替换为唯一的 ID 字符串；建议的字符串格式
 	//为 CompanyName.ProductName.SubProduct.VersionInformation
-	SetAppID(_T("实验1.1.AppID.NoVersion"));
+	SetAppID(_T("实验1.2.AppID.NoVersion"));
 
 	// TODO: 在此处添加构造代码，
 	// 将所有重要的初始化放置在 InitInstance 中
 }
 
-// 唯一的一个 C实验11App 对象
+// 唯一的一个 C实验12App 对象
 
-C实验11App theApp;
+C实验12App theApp;
 
 
-// C实验11App 初始化
+// C实验12App 初始化
 
-BOOL C实验11App::InitInstance()
+BOOL C实验12App::InitInstance()
 {
 	// 如果一个运行在 Windows XP 上的应用程序清单指定要
 	// 使用 ComCtl32.dll 版本 6 或更高版本来启用可视化方式，
@@ -99,9 +99,9 @@ BOOL C实验11App::InitInstance()
 	CSingleDocTemplate* pDocTemplate;
 	pDocTemplate = new CSingleDocTemplate(
 		IDR_MAINFRAME,
-		RUNTIME_CLASS(C实验11Doc),
+		RUNTIME_CLASS(C实验12Doc),
 		RUNTIME_CLASS(CMainFrame),       // 主 SDI 框架窗口
-		RUNTIME_CLASS(C实验11View));
+		RUNTIME_CLASS(C实验12View));
 	if (!pDocTemplate)
 		return FALSE;
 	AddDocTemplate(pDocTemplate);
@@ -124,7 +124,7 @@ BOOL C实验11App::InitInstance()
 	return TRUE;
 }
 
-int C实验11App::ExitInstance()
+int C实验12App::ExitInstance()
 {
 	//TODO: 处理可能已添加的附加资源
 	AfxOleTerm(FALSE);
@@ -132,7 +132,7 @@ int C实验11App::ExitInstance()
 	return CWinApp::ExitInstance();
 }
 
-// C实验11App 消息处理程序
+// C实验12App 消息处理程序
 
 
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
@@ -168,13 +168,13 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 // 用于运行对话框的应用程序命令
-void C实验11App::OnAppAbout()
+void C实验12App::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
-// C实验11App 消息处理程序
+// C实验12App 消息处理程序
 
 
 

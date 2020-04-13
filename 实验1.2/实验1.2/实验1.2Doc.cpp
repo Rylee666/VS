@@ -1,15 +1,15 @@
 
-// 实验1.1Doc.cpp : C实验11Doc 类的实现
+// 实验1.2Doc.cpp : C实验12Doc 类的实现
 //
 
 #include "stdafx.h"
 // SHARED_HANDLERS 可以在实现预览、缩略图和搜索筛选器句柄的
 // ATL 项目中进行定义，并允许与该项目共享文档代码。
 #ifndef SHARED_HANDLERS
-#include "实验1.1.h"
+#include "实验1.2.h"
 #endif
 
-#include "实验1.1Doc.h"
+#include "实验1.2Doc.h"
 
 #include <propkey.h>
 
@@ -17,27 +17,27 @@
 #define new DEBUG_NEW
 #endif
 
-// C实验11Doc
+// C实验12Doc
 
-IMPLEMENT_DYNCREATE(C实验11Doc, CDocument)
+IMPLEMENT_DYNCREATE(C实验12Doc, CDocument)
 
-BEGIN_MESSAGE_MAP(C实验11Doc, CDocument)
+BEGIN_MESSAGE_MAP(C实验12Doc, CDocument)
 END_MESSAGE_MAP()
 
 
-// C实验11Doc 构造/析构
+// C实验12Doc 构造/析构
 
-C实验11Doc::C实验11Doc()
+C实验12Doc::C实验12Doc()
 {
 	// TODO: 在此添加一次性构造代码
-	s = _T("学生姓名为：李婕");
+	 count = 0;
 }
 
-C实验11Doc::~C实验11Doc()
+C实验12Doc::~C实验12Doc()
 {
 }
 
-BOOL C实验11Doc::OnNewDocument()
+BOOL C实验12Doc::OnNewDocument()
 {
 	if (!CDocument::OnNewDocument())
 		return FALSE;
@@ -51,9 +51,9 @@ BOOL C实验11Doc::OnNewDocument()
 
 
 
-// C实验11Doc 序列化
+// C实验12Doc 序列化
 
-void C实验11Doc::Serialize(CArchive& ar)
+void C实验12Doc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
@@ -68,7 +68,7 @@ void C实验11Doc::Serialize(CArchive& ar)
 #ifdef SHARED_HANDLERS
 
 // 缩略图的支持
-void C实验11Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
+void C实验12Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
 {
 	// 修改此代码以绘制文档数据
 	dc.FillSolidRect(lprcBounds, RGB(255, 255, 255));
@@ -89,7 +89,7 @@ void C实验11Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
 }
 
 // 搜索处理程序的支持
-void C实验11Doc::InitializeSearchContent()
+void C实验12Doc::InitializeSearchContent()
 {
 	CString strSearchContent;
 	// 从文档数据设置搜索内容。
@@ -99,7 +99,7 @@ void C实验11Doc::InitializeSearchContent()
 	SetSearchContent(strSearchContent);
 }
 
-void C实验11Doc::SetSearchContent(const CString& value)
+void C实验12Doc::SetSearchContent(const CString& value)
 {
 	if (value.IsEmpty())
 	{
@@ -119,19 +119,19 @@ void C实验11Doc::SetSearchContent(const CString& value)
 
 #endif // SHARED_HANDLERS
 
-// C实验11Doc 诊断
+// C实验12Doc 诊断
 
 #ifdef _DEBUG
-void C实验11Doc::AssertValid() const
+void C实验12Doc::AssertValid() const
 {
 	CDocument::AssertValid();
 }
 
-void C实验11Doc::Dump(CDumpContext& dc) const
+void C实验12Doc::Dump(CDumpContext& dc) const
 {
 	CDocument::Dump(dc);
 }
 #endif //_DEBUG
 
 
-// C实验11Doc 命令
+// C实验12Doc 命令

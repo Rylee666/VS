@@ -3,7 +3,7 @@
 //
 
 #include "stdafx.h"
-#include "实验1.1.h"
+#include "实验1.2.h"
 
 #include "MainFrm.h"
 

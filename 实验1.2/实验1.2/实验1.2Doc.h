@@ -1,16 +1,16 @@
 
-// 实验1.1Doc.h : C实验11Doc 类的接口
+// 实验1.2Doc.h : C实验12Doc 类的接口
 //
 
 
 #pragma once
 
 
-class C实验11Doc : public CDocument
+class C实验12Doc : public CDocument
 {
 protected: // 仅从序列化创建
-	C实验11Doc();
-	DECLARE_DYNCREATE(C实验11Doc)
+	C实验12Doc();
+	DECLARE_DYNCREATE(C实验12Doc)
 
 // 特性
 public:
@@ -26,15 +26,15 @@ public:
 	virtual void InitializeSearchContent();
 	virtual void OnDrawThumbnail(CDC& dc, LPRECT lprcBounds);
 #endif // SHARED_HANDLERS
-
+	int count;
 // 实现
 public:
-	virtual ~C实验11Doc();
+	virtual ~C实验12Doc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
 #endif
-	CString s;
+
 protected:
 
 // 生成的消息映射函数
