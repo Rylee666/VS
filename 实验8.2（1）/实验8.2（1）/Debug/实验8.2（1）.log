@@ -1,0 +1,6 @@
+﻿  MyDlg.cpp
+c:\myvs\实验8.2（1）\实验8.2（1）\mydlg.cpp(95): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\myvs\实验8.2（1）\实验8.2（1）\mydlg.cpp(114): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\myvs\实验8.2（1）\实验8.2（1）\mydlg.cpp(115): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  实验8.2（1）.vcxproj -> C:\MyVS\实验8.2（1）\Debug\实验8.2（1）.exe
+  实验8.2（1）.vcxproj -> C:\MyVS\实验8.2（1）\Debug\实验8.2（1）.pdb (Partial PDB)
