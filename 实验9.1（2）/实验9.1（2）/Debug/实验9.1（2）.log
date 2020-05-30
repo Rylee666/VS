@@ -1,0 +1,7 @@
+﻿  MyDlg.cpp
+c:\myvs\实验9.1（2）\实验9.1（2）\mydlg.cpp(73): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\myvs\实验9.1（2）\实验9.1（2）\mydlg.cpp(74): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\myvs\实验9.1（2）\实验9.1（2）\mydlg.cpp(79): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\myvs\实验9.1（2）\实验9.1（2）\mydlg.cpp(85): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  实验9.1（2）.vcxproj -> C:\MyVS\实验9.1（2）\Debug\实验9.1（2）.exe
+  实验9.1（2）.vcxproj -> C:\MyVS\实验9.1（2）\Debug\实验9.1（2）.pdb (Partial PDB)
